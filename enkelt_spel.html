@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="simple.js">
+        var catX = 100;
+        var catY = 100;
+        clearScreen(); // detta gör så att skärmen uppdateras 
+        function start(){
+            for(var i=1; i<=5;i++){
+                rectangle(50*i,50*i,20,20,"red")
+            }
+            for(var i=1; i<=5; i++){
+                tal=random(3);//här slumpas ett tal och beroende på talet blir det olika färger
+                if(tal==0)
+                rectangle(50*i,50*i,20,20,"red")// den blir röd
+                if(tal==1)
+                rectangle(50*i,50*i,20,20,"green")// den blir grön
+                if(tal==2)
+                rectangle(50*i,50*i,20,20,"yellow")// den blir gul
+
+            }
+
+        }
+    </script>
+</body>
+</html>
